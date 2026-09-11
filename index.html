@@ -3,14 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Document</title>
 </head>
-<body>
+<body background="assets/images.png">
 
-    <div><h2>Number Guessing Game</h2></div>
-    <input type="number" id="guessInput" placeholder="Enter your guess">
-    <button id="guessButton" onclick="checkGuess()">Guess</button>
-    
+<div class="d-flex justify-content-center align-items-center vh-100">
+
+    <div class="card" style="width: 40rem; height: 30rem;">
+        <img src="assets/img1.jpg" class="card-img-top" alt="...">
+
+        <div class="card-body">
+            <h2 class="card-title"><center>Number Guessing Game</center></h2>
+            
+        </div>
+        <div style="margin-left: 20px; margin-right: 20px; margin-bottom: 50px;">
+            <input type="number" id="guessInput" placeholder="Enter your guess">
+            <button id="guessButton" onclick="checkGuess()">Guess</button>
+        </div>
+    </div>
+
+</div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="app.js"></script>
 </body>
