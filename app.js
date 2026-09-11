@@ -8,13 +8,14 @@ function checkGuess() {
         Swal.fire({
             title: "Congratulations!",
             width: 600,
+            align: "center",
             padding: "3em",
             color: "#716add",
             background: "#fff url(assets/backgroundimage.jpg)",
             backdrop: `
     rgba(0,0,123,0.4)
     url("assets/win gif.gif")
-    left top
+    center top
     no-repeat
   `
         });
